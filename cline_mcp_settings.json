@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "weather": {
+      "disabled": true,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "E:\\mcp\\weather",
+        "run",
+        "weather.py"
+      ]
+    },
+    "12306-mcp": {
+      "timeout": 60,
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.net/98a92f6a262b4b/sse",
+      "headers": {
+        "Authorization": "Bearer ms-4deff030-68b3-4a9b-a186-bdfd7e1b6f78"
+      },
+      "autoApprove": []
+    },
+    "mcp_tool": {
+      "timeout": 60,
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.net/a15e4d09707d4b/sse",
+      "headers": {
+        "Authorization": "Bearer ms-4deff030-68b3-4a9b-a186-bdfd7e1b6f78"
+      }
+    }
+  }
+}
